@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.festival" >
+
+
+        <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Festival"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" >
+            <activity
+                android:name=".MainActivity"
+                android:label="@string/app_name"
+                android:theme="@style/Theme.AppCompat.NoActionBar"/> <activity android:name=".Startmain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+            <activity android:name=".Art"></activity>
+            <activity android:name=".Epilogue"></activity>
+            <activity android:name=".Etc"></activity>
+            <activity android:name=".Music"></activity>
+            <activity android:name=".Nature"></activity>
+            <activity android:name=".Notice"></activity>
+            <activity android:name=".Play"></activity>
+            <activity android:name=".Mf"></activity>
+            <activity android:name=".Mch"></activity>
+            <activity android:name=".Af"></activity>
+            <activity android:name=".Ach"></activity>
+            <activity android:name=".Ef"></activity>
+            <activity android:name=".Ech"></activity>
+            <activity android:name=".Pf"></activity>
+            <activity android:name=".Pch"></activity>
+            <activity android:name=".Nf"></activity>
+            <activity android:name=".Arta"></activity>
+            <activity android:name=".Nch"></activity>
+            <activity android:name=".Artb"></activity>
+            <activity android:name=".Artc"></activity>
+            <activity android:name=".Artd"></activity>
+            <activity android:name=".Etca"></activity>
+            <activity android:name=".Etcb"></activity>
+            <activity android:name=".Etcc"></activity>
+            <activity android:name=".Etcd"></activity>
+            <activity android:name=".Musica"></activity>
+            <activity android:name=".Musicb"></activity>
+            <activity android:name=".Naturea"></activity>
+            <activity android:name=".Natureb"></activity>
+            <activity android:name=".Playa"></activity>
+            <activity android:name=".Playb"></activity>
+            <activity android:name=".Playc"></activity>
+
+        </application>
+
+    </manifest>

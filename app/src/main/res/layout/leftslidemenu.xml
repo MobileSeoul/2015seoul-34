@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/leftslidemenu"
+    android:layout_width="273dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/manuback">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/mainbar" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/mainB"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#0017ff00"
+        android:src="@drawable/mainmenu" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/imageView3"
+        android:background="#0017ff00"
+        android:src="@drawable/festivalvar"
+        android:layout_below="@+id/mainB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/musicB"
+        android:src="@drawable/musicmenu"
+        android:background="#0017ff00"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/artB"
+        android:src="@drawable/artmenu"
+        android:background="#0017ff00"
+        android:layout_below="@+id/musicB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playB"
+        android:src="@drawable/playmenu"
+        android:background="#0017ff00"
+        android:layout_below="@+id/artB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/natureB"
+        android:src="@drawable/naturemenu"
+        android:background="#0017ff00"
+        android:layout_below="@+id/playB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etcB"
+        android:src="@drawable/etcmenu"
+        android:background="#0017ff00"
+        android:layout_below="@+id/natureB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/etcvar"
+        android:layout_below="@+id/etcB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/noticeB"
+        android:src="@drawable/noticemenu"
+        android:background="#0017ff00"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/epilogueB"
+        android:src="@drawable/epiloguemenu"
+        android:background="#0017ff00"
+        android:layout_below="@+id/noticeB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

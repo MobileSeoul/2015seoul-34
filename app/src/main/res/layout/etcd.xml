@@ -1,0 +1,147 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:id="@+id/leftMenuPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff393c46"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:textColor="#ff000000" >
+
+        <!-- include -->
+
+        <include
+            android:id="@+id/ic_leftslidemenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/leftslidemenu" />
+    </LinearLayout>
+
+    <!-- slide layout -->
+
+    <LinearLayout
+        android:id="@+id/slidingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/ll_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/bar">
+
+                <Button
+                    android:id="@+id/bt_left"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/leftmenu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/homeB"
+                            android:src="@drawable/homebutton"
+                            android:background="#0017ff00"
+                            android:paddingLeft="0dp"
+                            android:layout_marginLeft="50dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_empty"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/textView"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="453dp"
+                android:layout_gravity="bottom">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="395dp"
+                    android:id="@+id/scrollView" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/etc_d" />
+                </ScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/scrollView"
+                    android:background="@drawable/barr"
+                    android:layout_marginLeft="0dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton2"
+                        android:src="@drawable/call"
+                        android:background="#0017ff00"
+                        android:onClick="onClick01"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="20dp"
+                        android:clickable="true" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton4"
+                        android:src="@drawable/homepage"
+                        android:background="#0017ff00"
+                        android:onClick="onClick02"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/imageButton2"
+                        android:layout_toEndOf="@+id/imageButton2" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
